@@ -1,0 +1,57 @@
+{
+  "pollIntervalMs": 300000,
+  "runOnStart": true,
+  "workDir": "./data/work",
+  "ledgerPath": "./data/posted.json",
+  "statePath": "./data/state.json",
+  "tokenStorePath": "./data/tiktok-tokens.json",
+  "bin": {
+    "ytDlp": "yt-dlp",
+    "ffmpeg": "ffmpeg",
+    "ffprobe": "ffprobe"
+  },
+  "twitch": {
+    "clientId": "YOUR_TWITCH_CLIENT_ID",
+    "clientSecret": "YOUR_TWITCH_CLIENT_SECRET",
+    "channels": ["shroud", "pokimane"],
+    "clipLookbackHours": 24,
+    "clipsPerChannel": 50
+  },
+  "trending": {
+    "minViews": 300,
+    "minViewsPerHour": 80,
+    "maxAgeHours": 48,
+    "maxPerCycle": 5
+  },
+  "crop": {
+    "enabled": true,
+    "detector": "face-saliency",
+    "targetAspect": "9:16",
+    "sampleFrames": 12,
+    "faceSaliency": {
+      "pythonPath": "python",
+      "scriptPath": "./scripts/detect_focus.py"
+    },
+    "aiVision": {
+      "apiKey": "",
+      "model": "claude-opus-4-8"
+    }
+  },
+  "pipelines": {
+    "raw": { "enabled": true },
+    "cropped": { "enabled": true }
+  },
+  "tiktok": {
+    "clientKey": "YOUR_TIKTOK_CLIENT_KEY",
+    "clientSecret": "YOUR_TIKTOK_CLIENT_SECRET",
+    "accessToken": "",
+    "refreshToken": "YOUR_TIKTOK_REFRESH_TOKEN",
+    "openId": "YOUR_TIKTOK_OPEN_ID",
+    "postMode": "DRAFT",
+    "privacyLevel": "SELF_ONLY",
+    "titleTemplate": "{title} — {broadcaster} on Twitch #twitch #clips #gaming",
+    "disableComment": false,
+    "disableDuet": false,
+    "disableStitch": false
+  }
+}

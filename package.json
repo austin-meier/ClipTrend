@@ -1,0 +1,20 @@
+{
+  "name": "tiktok",
+  "version": "1.0.0",
+  "description": "Background service that reposts trending Twitch clips to TikTok",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "keywords": ["twitch", "tiktok", "clips", "automation"],
+  "author": "Austin M",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
