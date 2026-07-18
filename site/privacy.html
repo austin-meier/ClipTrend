@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClipTend — Privacy Policy</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <a class="back" href="./index.html">&larr; Back</a>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Last updated: July 18, 2026</p>
+
+      <p>
+        This Privacy Policy explains how <strong>ClipTend</strong> ("the Software") handles
+        information. ClipTend is a self-hosted, open-source tool that you run on your own computer. It
+        is not a hosted service, and the author does not operate any server that receives, stores, or
+        processes your personal data.
+      </p>
+
+      <h2>1. Information the Software Handles</h2>
+      <p>When you configure and run the Software on your own machine, it works with:</p>
+      <ul>
+        <li>
+          <strong>API credentials you provide</strong> &mdash; your Twitch client ID/secret and your
+          TikTok client key/secret, access token, refresh token, and open ID. These are read from a
+          local configuration file.
+        </li>
+        <li>
+          <strong>Twitch clip data</strong> &mdash; publicly available information about clips
+          (titles, view counts, thumbnails, and download URLs) for the channels you choose to monitor.
+        </li>
+        <li>
+          <strong>Video files</strong> &mdash; clips downloaded temporarily to your machine for
+          processing before upload.
+        </li>
+        <li>
+          <strong>A local activity record</strong> &mdash; a log of which clips have already been
+          posted, and view-count snapshots used to detect trending clips.
+        </li>
+      </ul>
+
+      <h2>2. Where This Information Lives</h2>
+      <p>
+        All of the above is stored <strong>locally on your own computer</strong>, in files under the
+        Software's data directory (by default, a <code>data/</code> folder). None of it is transmitted
+        to the author of the Software or to any server operated by the author. The Software has no
+        backend and collects no analytics, telemetry, or usage data.
+      </p>
+
+      <h2>3. How Information Is Used</h2>
+      <p>
+        The information is used solely to perform the Software's function on your behalf: reading clip
+        data from Twitch, downloading and processing clips, and uploading them to your own TikTok
+        account. Your credentials are used only to authenticate your own API requests to Twitch and
+        TikTok.
+      </p>
+
+      <h2>4. Third-Party Services</h2>
+      <p>The Software communicates directly from your computer with third-party APIs:</p>
+      <ul>
+        <li>
+          <strong>Twitch</strong> &mdash; to read public clip data. See the
+          <a href="https://www.twitch.tv/p/legal/privacy-notice/">Twitch Privacy Notice</a>.
+        </li>
+        <li>
+          <strong>TikTok</strong> &mdash; to upload clips to your account. See the
+          <a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a>.
+        </li>
+        <li>
+          <strong>Optional AI cropping</strong> &mdash; if you enable the AI vision cropping feature,
+          sampled video frames are sent to your configured AI provider to determine the focal point
+          for cropping.
+        </li>
+      </ul>
+      <p>
+        These services process your requests under their own privacy policies. The author of the
+        Software is not responsible for their practices.
+      </p>
+
+      <h2>5. Data Retention</h2>
+      <p>
+        Because all data stays on your machine, you control its retention. You can delete the
+        Software's <code>data/</code> directory and configuration file at any time to remove locally
+        stored information. Tokens and records persist only until you delete them.
+      </p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>
+        The Software is not directed to children and is intended for use only by individuals old
+        enough to hold Twitch and TikTok accounts under those platforms' terms.
+      </p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time. Changes will be posted here with an
+        updated date.
+      </p>
+
+      <h2>8. Contact</h2>
+      <p>
+        For questions about this Privacy Policy, contact
+        <a href="mailto:austin.meier@hotmail.com">austin.meier@hotmail.com</a>.
+      </p>
+
+      <footer>ClipTend is an independent project and is not affiliated with Twitch or TikTok.</footer>
+    </main>
+  </body>
+</html>
